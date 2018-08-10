@@ -3,7 +3,6 @@ class Dog
     def initialize(breed, name)
         @breed = breed
         @name = name
-        @name = wag_tail
     end
     def wag_tail
         puts "Tail wagging"
