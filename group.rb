@@ -4,13 +4,8 @@ person_3 = {name:"Krillin", age:45, gender:"male"}
 
 group = [person_1, person_2, person_3]
 
-puts my_group
+group
 
-my_group.each do |person|
+group.each do |person|
     puts "#{person[:name]} is a #{person[:age]} year old #{person[:gender]}!"
 end
-
-
-name: "noel"
-
-:name

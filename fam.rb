@@ -1,4 +1,3 @@
-# Given
 
 family = { 
 uncles: ["joe", "jim", "john"],
