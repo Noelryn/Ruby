@@ -6,8 +6,8 @@ brothers: ["frank", "rob", "david"],
 aunts: ["maud", "sally", "jean"]
 }
 
-sisters = family.select { |k| k["sisters"] }
-brothers = family.select { |k| k["brothers"] }
+sisters = family.select {|fam| fam["sisters"]} 
+brothers = family.select {|fam| fam["brothers"]}
 
 close_family = [sisters, brothers]
 
