@@ -22,29 +22,19 @@ result.each do |k, v|
 
 
 # version 2
-    def anagram?(w1, w2)
-        w1.chars.sort == w2.chars.sort
-    end
-
-    w_length = words.length
-
-    anagram_array = []
-
-    for i in (0..words.length-2)    
-        temp_array = []
-        w1=words[i]
-        temp_array << w1
-        for j in (i+1..words.length-1)
-            w2 = words[j]
-            unless anagram_array.flatten.include?(w2)
-                if anagram?(w1,w2)
-                    temp_array << w2                
-                end
-            end
-        end
-        if temp_array.length > 1
-            anagram_array << temp_array
+while words.length > 0
+    out = []
+    first_word = words.first.split("")
+    words.each do |word|
+        word = word.split("")
+        if (first_word - word).empty?
+            out << word.join
         end
     end
-    
-    anagram_array.each {|a| p a}
+    out.each do |wrd|
+        words.delete(wrd)
+    end
+    print out
+    puts
+end
+

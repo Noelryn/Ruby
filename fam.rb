@@ -7,6 +7,7 @@ aunts: ["maud", "sally", "jean"]
 }
 
 sisters = family.select {|fam| fam["sisters"]} 
+
 brothers = family.select {|fam| fam["brothers"]}
 
 close_family = [sisters, brothers]

@@ -8,3 +8,4 @@ class Dog
         puts "Tail wagging"
     end
 end
+ 
