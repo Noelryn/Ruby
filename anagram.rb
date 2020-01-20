@@ -19,8 +19,6 @@ result.each do |k, v|
     p v
     end
 
-
-
 # version 2
 while words.length > 0
     out = []

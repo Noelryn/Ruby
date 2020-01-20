@@ -3,3 +3,7 @@ puts movies[:"Batman"]
 puts movies[:"V_for_vendetta"]
 puts movies[:"Ironman"]
 puts movies[:"Justice_League"]
+
+group.each do |person|
+    puts "#{person[:name]} is a #{person[:age]} year old #{person[:gender]}!"
+end
