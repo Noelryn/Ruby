@@ -1,9 +1,10 @@
-movies = {Batman: 1989, V_for_vendetta: 2005, Ironman: 2008, Justice_League: 2017}  
-puts movies[:"Batman"]
-puts movies[:"V_for_vendetta"]
-puts movies[:"Ironman"]
-puts movies[:"Justice_League"]
+movie_1 = { name: 'Batman', date: 1989 }
+movie_2 = { name: 'V_for_vendetta',  date: 2005 }
+movie_3 = { name: 'Ironman',  date: 2008 }
+movie_4 = { name: 'Justice_League',  date: 2017 }  
 
-group.each do |person|
-    puts "#{person[:name]} is a #{person[:age]} year old #{person[:gender]}!"
+my_favourite_movies = [ movie_1, movie_2, movie_3, movie_4]
+
+my_favourite_movies.each do |years|
+    puts "#{years[:date]}"
 end
